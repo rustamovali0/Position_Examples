@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Positioning</title>
+	<style>
+
+		/* STICKYNEN FIXEDIN ESAS FERQI STCIKIYE TOP-DAN  HER HANSI BIR DEYER VERMESEN YERINDE YAPISMAYACAQ YANI ISDEMIYECEY
+
+       sticky esasen NAVbarlarda
+       fixed ise messsage qutularinda istifade olunur */
+
+		body {
+			margin: 0;
+			padding: 0;
+			height: 2000px;
+		}
+
+		.box {
+			width: 120px;
+			height: 120px;
+			line-height: 120px;
+			text-align: center;
+			font-size: 30px;
+		}
+
+		#first {
+			background: lightblue;
+			color: brown;
+			width: 100%;
+			position: sticky;
+			top: 0;
+			z-index: -1;
+		}
+
+
+		#second {
+			background: lightsalmon;
+			position: relative;
+		}
+
+		.mbox {
+			width: 30px;
+			height: 30px;
+			background: yellowgreen;
+			position: absolute;
+			top: 70px;
+			left: 50px;
+		}
+
+		#third {
+			background: lightseagreen;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="box" id="first">BOX-1</div>
+
+	<div class="box" id="second">
+		<div class="mbox"></div>
+	</div>
+
+
+
+	<div class="box" id="third">BOX-3</div>
+
+
+
+</body>
+
+</html>
